@@ -12,4 +12,5 @@ SQL> select * from tab;
 
 ---- ONE CODE MADE 
 CREATE INDEX idx_sale_date_partition ON sales_data (sale_date) LOCAL;
+CREATE INDEX idx_sale_date_partition ON sales_data (sale_date) GLOBAL;
 
