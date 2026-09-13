@@ -16,3 +16,5 @@
 ✅ .gitignore — Ignore files/folders — Done
 echo personal/ >> .gitignore
 echo pass.txt >> .gitignore         -- Done 
+
+✅ Git Restore Command  
