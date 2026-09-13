@@ -17,5 +17,5 @@
 echo personal/ >> .gitignore
 echo pass.txt >> .gitignore         -- Done 
 
-✅ Git Restore Command  -- done 
+✅ Git Restore Command  -- done  ⚠️⚠️⚠️⚠️⚠️⚠️ ONCE CHANGES COMMITTED RESTORE COMMAND NOT WORK ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 ✅ 
