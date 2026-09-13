@@ -1,21 +1,22 @@
 🚀 GIT INSTALLATION & BASIC WORKFLOW
-✅ Git Installation — Git Terminal done
-✅ GitHub — Configured
-✅ Git Workflow — Done
-✅ File-Based Commands — Done
-✅ Push Code from Terminal to GitHub — Done
-✅ git add . — Done
-✅ git commit -m "CODE DONE" — Done
-✅ git init — Done
-✅ git add README.md — Done
-✅ git commit -m "first commit" — Done
-✅ git branch -M main — Done
-✅ git remote add origin HOST_URL — Done
-✅ git push -u origin main / git push — Done
-✅ git status — Done
-✅ .gitignore — Ignore files/folders — Done
-echo personal/ >> .gitignore
-echo pass.txt >> .gitignore         -- Done 
+✅ GIT INSTALLATION — GIT TERMINAL DONE
+✅ GITHUB — CONFIGURED
+✅ GIT WORKFLOW — DONE
+✅ FILE-BASED COMMANDS — DONE
+✅ PUSH CODE FROM TERMINAL TO GITHUB — DONE
+✅ GIT ADD . — DONE
+✅ GIT COMMIT -M "CODE DONE" — DONE
+✅ GIT INIT — DONE
+✅ GIT ADD README.MD — DONE
+✅ GIT COMMIT -M "FIRST COMMIT" — DONE
+✅ GIT BRANCH -M MAIN — DONE
+✅ GIT REMOTE ADD ORIGIN HOST_URL — DONE
+✅ GIT PUSH -U ORIGIN MAIN / GIT PUSH — DONE
+✅ GIT STATUS — DONE
+✅ .GITIGNORE — IGNORE FILES/FOLDERS — DONE
+ECHO PERSONAL/ >> .GITIGNORE
+ECHO PASS.TXT >> .GITIGNORE         -- DONE 
 
-✅ Git Restore Command  -- done  ⚠️⚠️⚠️⚠️⚠️⚠️ ONCE CHANGES COMMITTED RESTORE COMMAND NOT WORK ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-✅ 
+✅ GIT RESTORE COMMAND  -- DONE  ⚠️⚠️⚠️⚠️⚠️⚠️ ONCE CHANGES COMMITTED RESTORE COMMAND NOT WORK ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+✅ GIT LOG --ONELINE  ----- DONE LAST LOG CHECKING WITH HASH VALUE FOR GIT REVERT COMMAND 
+✅
