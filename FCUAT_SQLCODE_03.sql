@@ -36,4 +36,8 @@ WWE                            TABLE
 
 
 ----git Restore comands --- FIRST 1 RESTORE WITHOUT COMMITE 	
+                        ---	SECOND 2 RESTORE WITHOUT COMMITE 
+						
+----git REVERT comands --- FIRST 1 RESTORE WITHOUT COMMITE 	
                         ---	SECOND 2 RESTORE WITHOUT COMMITE
+						

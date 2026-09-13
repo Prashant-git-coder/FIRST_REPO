@@ -17,4 +17,5 @@
 echo personal/ >> .gitignore
 echo pass.txt >> .gitignore         -- Done 
 
-✅ Git Restore Command  -- 
+✅ Git Restore Command  -- done 
+✅ 
