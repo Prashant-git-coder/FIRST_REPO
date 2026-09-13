@@ -37,6 +37,23 @@ FROM (
            DENSE_RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS dept_rank
     FROM employees
     )
-WHERE dept_rank = 2 ORDER BY department_id DESC;
+WHERE dept_rank = 2 ORDER BY department_id DESC;4
 
-=========================================================================================== pending
+
+select * from DUPLICATE ;
+
+pnarale1072
+---count of duplicate recods
+
+select c_id,first_name,salary,count(*) from DUPLICATE group by c_id,first_name,salary  having count(*)>=1 
+order by c_id asc ;
+
+--find duplicate recods- and delete duplicate records
+
+select * from DUPLICATE where rowid not in 
+(select max(rowid) from DUPLICATE group by c_id having count (*)>=1 ) ;
+
+delete from DUPLICATE where rowid not in 
+(select max(rowid) from DUPLICATE group by c_id having count(*)>= 1 ) ;
+
+=========================================================================================== end 
