@@ -41,5 +41,5 @@ WHERE dept_rank = 2 ORDER BY department_id DESC;4
 
 
 
-select * from table  DUPLICATE :
-=======================================================================PENDING CODE   
+--CODE IS REDAY FOR NEXT 
+=========================--CODE IS REDAY FOR NEXT 
