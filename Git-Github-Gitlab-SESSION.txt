@@ -1,0 +1,18 @@
+🚀 GIT INSTALLATION & BASIC WORKFLOW
+✅ Git Installation — Git Terminal done
+✅ GitHub — Configured
+✅ Git Workflow — Done
+✅ File-Based Commands — Done
+✅ Push Code from Terminal to GitHub — Done
+✅ git add . — Done
+✅ git commit -m "CODE DONE" — Done
+✅ git init — Done
+✅ git add README.md — Done
+✅ git commit -m "first commit" — Done
+✅ git branch -M main — Done
+✅ git remote add origin HOST_URL — Done
+✅ git push -u origin main / git push — Done
+✅ git status — Done
+✅ .gitignore — Ignore files/folders — Done
+echo personal/ >> .gitignore
+echo pass.txt >> .gitignore         -- Done 
