@@ -1,0 +1,352 @@
+install first git ---> github ---login ----> pnarale1072@gmail.com --->Prashant-git-coder --->https://github.com/Prashant-git-coder
+
+OPEN GIT BASH HERE ---> similar with linux terminal  
+config --> Git ---> Github below commmands 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop
+$ git config --global user.name "Prashant-git-coder"
+
+Prashant@Prashant-PC MINGW64 ~/Desktop
+$ git config --global user.email "pnarale1072@gmail.com"
+
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Prashant-git-coder
+
+:
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Prashant-git-coder  ----------------------------------------------------------> check here your Git name 
+user.email=pnarale1072@gmail.com -------------------------------------------------------> check here your email 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 ---------------create on working directory & make any file for First_lession 
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01
+$ git init                                  ---------------- user for starting github add in repository few commands
+Initialized empty Git repository in C:/Users/Prashant/Desktop/WD01/.git/
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (master)
+$ git add .                                ------------------ with help of {.} add all file in github repository (if use name of files)
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (master)
+$ git commit -m "commit done in html"      ------------------- once code done need to be commit for repository 
+[master (root-commit) 9f0aaf3] commit done in html
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.html                 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (master)
+$ git branch -M main                       ------------------- u see the name is master we need to change the into branch                 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git remote add origin https://github.com/Prashant-git-coder/FIRST_REPO.git ------------------- add ur github repository host URL for file will reflect there 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 240 bytes | 240.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Prashant-git-coder/FIRST_REPO.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main) 
+$  git push -u origin main                        ----------------- code will push in github remote
+
+📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌
+📌ORIGIN = REMOTE REPOSITORY NAME (GITHUB) 🌐  📌
+📌MAIN   = LOCAL OR BARNCH NAME 🌿             📌
+📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌
+=================================================               =================================================
+************************************************* GIT  WORKFLOW *************************************************
+=================================================               =================================================
+
+WORKING DIRECTORY ------>  STAGING AREA ------> LOCAL REPO ------> REMOTE REPO  
+(WD01)  |                  |                    |                  |
+		|				   |                    |                  |	
+		|                  |                    |                  |
+		|--git add ----->  |-- git commit       |-- git push       |--Poush code for testing
+		
+(((((create a new repository on the command line)))
+echo "# S01_BRANCH_REPO" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Prashant-git-coder/S01_BRANCH_REPO.git
+git push -u origin main		
+
+(((((push an existing repository from the command line)))))
+git remote add origin https://github.com/Prashant-git-coder/S01_BRANCH_REPO.git
+git branch -M main
+git push -u origin main
+
+
+EVERY TIME WE HAVE EDDIT A FILE IN WORKING DIRECTORY 
+WE SHOULD USE COMMANDS FOR CODE MOVE IN REMOTE DIRECTORY 
+
+WORKING DIRECTORY ------> THIS IS THE PLACE WHERE THE DEVELOPER CREATES AND MODIFIES CODE.{git add . OR FILE_NAME} ----> GIT ADD COMMAND IS WACTHMAN 
+STAGING AREA      ------> ONCE THE CODE IS COMPLETED, IT IS ADDED TO THE STAGING AREA TEMPORARILY AND IS READY TO BE COMMITTED.{git commit -m "change commited"}
+LOCAL REPO        ------> ONCE THE CODE IS COMMITTED, IT IS STORED IN THE LOCAL REPOSITORY AND IS READY TO BE PUSHED TO THE REMOTE REPOSITORY HOSTED ON GITHUB.{git push -u origin main} :- -U :- WTACHMAN OR (git push  origin main)
+REMOTE REPO       ------> ONCE THE COMMITTED CODE IS PUSHED TO THE REMOTE REPOSITORY, IT IS ON GITHUB AND CAN BE USED FOR DEPLOYMENT TO UAT → STAGING → PROD. (Poush code for testing)
+
+|--git add ----->  |-- git commit       |-- git push
+
+git status --------------------------------- check the working directory status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   FCUAT_SQLCODE_01.sql
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        FCPROD_DB_CONFIG.txt
+        FCPROD_DB_PASS.txt
+
+
+git add sql.file
+git commit -m "Updated SQL file"
+git push
+
+📌 —CONDITION_01 --  IGNORE THE UNWANTED FILE FORM WORKING FILE USE THE BELOW COMMAND
+$ git status  
+
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   FCUAT_SQLCODE_01.sql
+---------------------------------------------------------------------
+Untracked files:                                                     |
+  (use "git add <file>..." to include in what will be committed)     |-->>> Untracked files:  WHICH MENS UNWANTED FILES 
+        FCPROD_DB_CONFIG.txt                                         |
+        FCPROD_DB_PASS.txt                                           |
+---------------------------------------------------------------------
+USE THIS COMMANDS 
+$ echo FCPROD_DB_CONFIG.txt >> .gitignore
+$ echo FFCPROD_DB_PASS.txt >> .gitignore
+$ git status
+-------------------------------------------------------------------
+Untracked files:                                                   |
+  (use "git add <file>..." to include in what will be committed)   |
+        .gitignore                                                 |
+-------------------------------------------------------------------
+📌 —CONDITION_02 --  IGNORE THE UNWANTED FILE FORM WORKING DIRECTORY USE THE BELOW COMMAND
+$ echo personal/ >> .gitignore
+$ git status
+-------------------------------------------------------------------
+Untracked files:                                                   |
+  (use "git add <file>..." to include in what will be committed)   |
+        .gitignore  --- for file                                   |
+        gitignore   --- for directory                              |
+-------------------------------------------------------------------
+📌 —CONDITION_03 --  AFTER IGNORE UNWANTED OBJECTS. WHAT HAPPEND IF I USE GI ADD . COMMANDS 
+$ git add .
+$ git commit -m "IGNORE HAS BEEN DONE"
+$ Git push 
+---- all ignore file moved on remote hots:GITHUB when name of gitignore in side the mentioned file names only no data 
+
+
+✅ GIT RESTORE COMMAND  -- 
+MAKE NEW FILE --> FCUAT_SQLCODE_03.SQL ADD SOME CODE IN WORKING DIRECTORY
+$ git add FCUAT_SQLCODE_03.sql  ---> eddit some code 
+$ git restore FCUAT_SQLCODE_03.sql ---> EDDITED DATA HAS BEEN ROLLBACKED FROM STAGING AREA WITHOUT COMMITE 
+
+📌 —CONDITION_04 -- IF ANY FILE IS ACCIDENTALLY ADDED TO THE STAGING AREA, HOW CAN WE RESTORE IT TO THE WORKING DIRECTORY FROM THE STAGING AREA?
+$ git restore --staged FCUAT_SQLCODE_03.sql
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+-------------------------------------------------------------------
+Changes to be committed:                                           |
+  (use "git restore --staged <file>..." to unstage)                | -- git keep traking  
+        new file:   FCUAT_SQLCODE_03.sql                           |
+-------------------------------------------------------------------
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git restore --staged FCUAT_SQLCODE_03.sql   ------------------------- restore the file from staged area 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+-------------------------------------------------------------------
+Untracked files:                                                   |
+  (use "git add <file>..." to include in what will be committed)   |  -- git has left trak file -- FCUAT_SQLCODE_03.sql  
+        FCUAT_SQLCODE_03.sql                                       |
+-------------------------------------------------------------------
+
+====================================== 🚀🚀🚀🚀🚀🚀IMP COMMANDS🚀🚀🚀🚀🚀🚀======================================
+$ git pull --rebase origin main (1)  :first brings the latest changes from the GitHub main branch into your local repository and then reapplies your local commits on top of those latest changes.
+$ git rebase --continue         (2)  :After resolving a conflict, this command continues the rebase process.
+$ git push -f                   (3)  :Forcefully pushes your local commits to the remote repository, even if Git normally rejects the push.
+
+⚠️⚠️⚠️⚠️⚠️⚠️ ONCE CHANGES COMMITTED RESTORE COMMAND NOT WORK ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+✅  GIT REVERT COMMAND  :- FILE ROLLBACKED AFTER COMMITED FROM STAGED        -- 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git add FCUAT_SQLCODE_03.sql                      ---- EDDIT DATA INSIDE THIS FILE AND ADD ON GIT 
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git commit -m "GIT REVERT DONE"                   ---- COMMITED THE CHANGES DATA 
+[main c72ed23] GIT REVERT DONE
+ 2 files changed, 1 insertion(+), 26 deletions(-)
+ delete mode 100644 Git-Github-Gitlab-SESSION.txt
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git status                                       ---- CHECK THE STATUS 
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Prashant@Prashant-PC MINGW64 ~/Desktop/WD01 (main)
+$ git log --oneline                                ---- CHECK THE LAST LOG FOR NEED HASH VALUE FOR REVRET 
+c72ed23 (HEAD -> main) GIT REVERT DONE             --- LAST HASH VALUE
+617b9f3 (origin/main) GIT REVERT DONE
+31d5813 ignore has been done
+dbd286b GIT RUNNING
+22eccef GIT REVERT DONE
+356b68e GIT RUNNING
+e66758e Git Revert Command
+6492a72 Git Restore Command
+4fa9253 GIT&GITHUB CLASS RUNNING
+5ca0b76 GIT&GITHUB CLASS RUNNING
+8691970 GIT&GITHUB CLASS RUNNING
+f3e2507 Changes commited 01.sql
+d9ab71f Changes commited 02.sql
+99f7b49 ignore has been done
+7b3c720 Changes commited 03 times
+d91b34b change commited
+0e1b3e7 change commite
+fb72fc9 commite done
+aa904ed commit done in WD01
+9f0aaf3 commit done in html
+
+PRASHANT@PRASHANT-PC MINGW64 ~/DESKTOP/WD01 (MAIN)
+$ GIT REVERT C72ED23                            --- USE THIS COMMANDS FOR ROLLBACK AFTER COMMITED FILES  
+-------------------------------------------------------------------														
+[MAIN 56CDABC] REVERT "GIT REVERT DONE"                            |
+ 2 FILES CHANGED, 26 INSERTIONS(+), 1 DELETION(-)                  |
+ CREATE MODE 100644 GIT-GITHUB-GITLAB-SESSION.TXT                  |
+-------------------------------------------------------------------
+PRASHANT@PRASHANT-PC MINGW64 ~/DESKTOP/WD01 (MAIN)  
+
+⚠️⚠️⚠️⚠️⚠️⚠️ AFTER REVERT FROM COMMITED CODE WITH HASH VALUE -- HISTORY WILL MAINTAIN ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+✅  GIT RESET COMMAND : 
+$ GIT RESET -- 3 🚩(FLAGS)
+        0.    GIT RESET HEAD~1
+		1.🚩 GIT RESET  --SOFT HEAD~1  --> CODE UNDO BUT KEEP ON STAGED AREA
+		2.🚩 GIT RESET  --MIXED HEAD~1 --> CODE UNDO EVEN ON STAGED AREA
+		3.🚩 GIT RESET  --HARD HEAD~1  --> 🚫CODE UNDO FROM STAGED & WORKING AREA REMOVED PERMANTLY 
+
+
+⚠️⚠️⚠️⚠️⚠️⚠️ AFTER RESET FROM COMMITED CODE WITH HASH VALUE FROM REMOTE  -- HISTORY WILL NOT MAINTAIN⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+✅  CREATE GLOBAL & LOCAL GIT ALIASES :- USER CREATE A SHORTCUT COMMAND USEING GITCONFIG FILE 
+		FOR EXAMPLE 
+		: GIT STATUS = GIT ST
+		
+✅  CREATE, SWITCH, MERGE & DELETE BRANCHES :-  A branch is like a separate working please of your code where you can make changes without directly affecting the main code.
+
+🌿 CREATE                  
+							$ git branch                     							-- list of all barnches                      --output  is main                       
+							$ git branch S01_BRANCH          							-- creat a branch with name of S01_BRANCH    ---output is new barnch created 
+							$ git branch                                                -- list of all barnches                      ---output is main, output                              
+							$ git checkout S01_BRANCH                                   -- switch barnch into S01_BRANCH             ---output is S01_BRANCH
+							
+							
+🌿 SWITCH : 				$ git switch S01_BRANCH                                     -- switch barnch into S01_BRANCH                         ---output is S01_BRANCH
+							$ git checkout -b third                                     -- if branch not exite with use of -b its created        ---output is  barnch created & switched into third
+							$ git switch  -c fourth                                     -- if branch not exite with use of -b its created        ---output is  barnch created & switched into fourth
+							$ git switch main                                           -- main project is default branch                        --- output is branch swithc into main 
+							$ git branch -D fourth                                      -- delete branch with use of -D                          --- output is branch detleted       
+						
+							$ git add S01_BRANCH_01.sql S01_BRANCH_02.sql               -- create 2 files in S01_BRANCH       
+							$ git commit -m "S02_BRANCH RUNNING"                        -- barnch files commited 
+					        $ git switch main                                           -- ⚠️⚠️WHEN U SWITCH BARNCH FILE WILL NOT VISIBALE OF BARNCH IN WORKING DIRECTORY⚠️⚠️ 
+							$ git branch S01_BRANCH                                     -- ⚠️⚠️WHEN U SWITCH BARNCH S01_BRANCH FILE WILL VISIBALE OF BARNCH IN WORKING DIRECTORY⚠️⚠️ 
+							$ git switch S01_BRANCH                                     -- ⚠️⚠️WHEN U SWITCH BARNCH S01_BRANCH FILE WILL VISIBALE OF BARNCH IN WORKING DIRECTORY⚠️⚠️ 
+							$ git push -u origin S01_BRANCH                             -- UNDER THIS BARNCH ALL FILES WILL PUSH INTO HOST:GITHUB URL              
+							$ git switch main                                           -- BARNCH CHANGED 
+🌿 MERGE :					$ git merge S01_BRANCH                                      -- ONCE ALL CODE DONE CREATED BY DEVELOPER , ADD IN THE MAIN BRANCH USEING  MERGE COMMANDS                                     
+							$ git push -u origin main                                   -- PUSH ALL CODES WITH BARNCH & MAIN BRNACH INTO HOST:GITHUB URL
+							
+							
+✅  GIT AMEND COMMAND : Add new changes to the last commit
+							$ git add .                                                 -- create new file in main & add in staged area
+							$ git commit --amend                                        -- commite this file with use command                                      
+							$ git commit --amend -m "Updated SQL file"                  -- pending 
+							
+✅  GIT CLONE COMMAND  : COPY THE ANYOTHER HOST:URL IN YOU MACHIN USEING GIT CLONE COMMANDS
+
+
+							$ git clone  https://github.com/Prashant-git-coder/firnds git.git
+							$ cd directory  ---> Prashant@Prashant-PC MINGW64 ~/Desktop/clone/firnds git (main) ---> make a clone directory 
+
+
+✅  GIT PULL   : Downloads the latest changes from the remote repository and updates your local branch.
+
+							$ git pull origin                                          -- origin is the name of your remote GitHub repository.
+
+
+✅  GIT FETCH  : Downloads the latest changes from the remote repository but DOES NOT update your working branch.
+
+							$ git fetch origin                                         -- origin is the name of your remote GitHub repository.						
+							
+✅  GIT DIFF   : Shows the changes made in your Working Directory that ARE NOT YET STAGED.
+
+							$ git diff                                        -- changed codeline showing in below from ur working directory BEFOR COMMIT;
+							$ git diff origin/main                            -- origin = Remote repository name (GitHub) differnce main = LOCAL 	
+							
+			   📌 —CONDITION_04 -- IF THE CODE PUSH ON THE REMOTE REOP THEN  WE CHECK BOTHE COMMITED CODE 
+			   
+							$ git log --oneline                               -- take HASH VALUE from first 2 commited cods form the log
+							$ git diff 09306d5 7dec661                        -- first commited second commited hash value take from logs & check 
+							
+✅  HOW TO SKIP GIT STAGING AREA :- 
+
+                            $ git commit -a -m "Skip Git Staging Area"        -- used to automatically stage and commit changes to already tracked files without manually running GIT ADD.
+							$ git commit FCUAT_SQLCODE_05.sql -m "Skip Git Staging Area" 
+
+✅  GIT STASH COMMAND :- Git stash is used to temporarily save your uncommitted changes and make your working directory .
+
+                            $ git add GIT_STASH_SQLCODE_07.txt               -- add in staged area without commite 
+							$ git stash                                      -- uncommitted code saved in staged   --output is   Saved working directory and index state WIP on main: f6acc23 Skip Git Staging Area	
+							$ git stash list                                 -- list of uncommitted code saved in staged
+							$ git stash apply stash@{2}                      -- second uncommitted will restore in mian branch 
+							$ git stash apply                                -- uncommitted code restore in main but history saved in stash list
+							$ git stash pop                                  -- uncommitted code restore in main but history will removed in stash list
+							$ git stash clear                                -- stash list will removed or deleted 
