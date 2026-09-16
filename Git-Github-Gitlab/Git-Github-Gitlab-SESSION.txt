@@ -1,0 +1,46 @@
+🚀 GIT INSTALLATION & BASIC WORKFLOW
+✅GIT CONFIG --LIST
+✅ GIT INSTALLATION — GIT TERMINAL DONE
+✅ GITHUB — CONFIGURED
+✅ GIT WORKFLOW — DONE
+✅ FILE-BASED COMMANDS — DONE
+✅ PUSH CODE FROM TERMINAL TO GITHUB — DONE
+✅ GIT ADD . — DONE
+✅ GIT COMMIT -M "CODE DONE" — DONE
+✅ GIT INIT — DONE
+✅ GIT ADD README.MD — DONE
+✅ GIT COMMIT -M "FIRST COMMIT" — DONE
+✅ GIT BRANCH -M MAIN — DONE
+✅ GIT REMOTE ADD ORIGIN HOST_URL — DONE
+✅ GIT PUSH -U ORIGIN MAIN / GIT PUSH — DONE
+✅ GIT STATUS — DONE
+✅ .GITIGNORE — IGNORE FILES/FOLDERS — DONE
+ECHO PERSONAL/ >> .GITIGNORE
+ECHO PASS.TXT >> .GITIGNORE         -- DONE 
+✅ GIT RESTORE COMMAND  -- DONE  ⚠️⚠️⚠️⚠️⚠️⚠️ ONCE CHANGES COMMITTED RESTORE COMMAND NOT WORK ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+✅git pull --rebase origin main -- DONE 
+✅git pull --rebase origin main -- DONE 
+✅git rebase --continue         --DONE 
+✅git push -f                    -- DOEN 
+-------------------------------------------------------------------------------------------
+✅ GIT LOG --ONELINE  ----- DONE LAST LOG CHECKING WITH HASH VALUE FOR GIT REVERT COMMAND |
+✅ GIT REVERT COMMAND  -- COMMITED CODE REVERT FROM SATGING WITH HASH VALUE               |
+-------------------------------------------------------------------------------------------
+✅ GIT RESET COMMAND  ---  OMMITED CODE REVERT FROM REMOTE HOST:URL WITH HASH VALUE ---⚠️⚠️⚠️⚠️⚠️⚠️ ONCE RESET COMMITTED DONE IT WILL NOT MAINTAIN HISTORY OF HASH VALUE ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️     
+✅ CREATE, SWITCH, MERGE & DELETE BRANCHES :- DONE 
+✅ GIT AMEND COMMAND   -- DONE
+✅ GIT CLONE COMMAND   -- DONE
+✅ GIT PULL            -- DONE
+✅ GIT FETCH           -- DONE 
+✅ GIT DIFF            -- DONE
+✅ GIT DIFF ORIGIN/MAIN --DONE
+✅ GIT COMMIT -A -M "SKIP GIT STAGING AREA" --DONE
+✅ GIT COMMIT FCUAT_SQLCODE_05.SQL -M "SKIP GIT STAGING AREA" --DONE
+✅ GIT STASH COMMAND --DONE
+✅ git add GIT_STASH_SQLCODE_07.tx
+✅ GIT STASH           -- DONE                               
+✅ GIT STASH LIST        -- DONE                 
+✅ GIT STASH APPLY STASH@{0}  -- DONE       
+✅ GIT STASH APPLY             -- DONE            
+✅ GIT STASH POP              -- DONE               
+✅ GIT STASH CLEAR             -- DONE              
